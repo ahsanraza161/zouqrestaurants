@@ -8,7 +8,7 @@
       href="./assets/zouq-logo.png"
       type="image/x-icon"
     />
-    <title>Zouq Resturant Menu by Ahsan</title>
+    <title>Zouq Resturant Menu Developed by Ahsan</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -22,20 +22,26 @@
     <img src="./assets/eight.png" alt="menu" class="menu" />
     <footer>
       <section>
-        <h1>Zouq Resturant Menu</h1>
+        <h1>Zouq Restaurant Menu</h1>
       </section>
       <div class="footer">
-        <div id="button"></div>
+        <div id="button" onclick="toggleFooter()"></div>
         <div id="container">
           <div id="cont">
             <div class="footer_center">
-              <h3>
-                <a target="_blank" href="https://wa.me/923321575919?text=I'd%20like%20to%20chat%20with%20you%20about%20website%20development">Developed by Ahsan</a>
-              </h3>
-            </div>
+                <h3>
+                <a href="https://wa.me/923321575919?text=I'd%20like%20to%20chat%20with%20you%20about%20website%20development">Developed by Ahsan</a>
+            </h3>
+              </div>
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      function toggleFooter() {
+        const footer = document.querySelector('.footer');
+        footer.classList.toggle('expanded');
+      }
+    </script>
   </body>
 </html>
